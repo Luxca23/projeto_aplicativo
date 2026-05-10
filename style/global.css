@@ -1,0 +1,50 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+:root{
+    /* Cor Base */
+    --bg-color: #09090b;
+    --surface-color: #18181B;
+    --stroke-color: #27272A;
+    --text-color-secundary: #A1A1AA;
+    --text-color-primary: #F4F4F5;
+
+
+    /* Produto */
+    --brand-color-primary: #F7B733;
+    --brand-color-secundary: #FC4A1A;
+
+    /* Fonte: "Inter", sans-serif; */
+    --fonte-inter: "Inter", sans-serif;
+    --fw-base: 400;
+    --fw-md:500;
+    --fw-bold:800;
+
+
+    /* Tamanhos de fonte */
+    --fs-sm:0.875rem;
+    --fs-base: 1rem;
+    --fs-large: 1.25rem;
+    --fs-xlarge: 1.5rem;
+    --fs-2xlarge: 2.5rem;
+
+    /* Tamanhos fixos de sessões(PADDING)*/
+    --p-x: 2rem;
+    --p-y: 5rem;
+    --p-all: 2rem; 
+
+}
+
+html{
+    font-family: var(--fonte-inter);
+}

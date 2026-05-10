@@ -1,11 +1,6 @@
 @import url(global.css);
 
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+    background-color: rgb(255, 248, 235);
 }
 
-body{
-    background-color: antiquewhite;
-}
