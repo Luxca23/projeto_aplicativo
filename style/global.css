@@ -31,7 +31,7 @@
     --fw-bold:800;
 
 
-    /* Tamanhos de fonte */
+    /* Tamanhos de fonte (Mobile-first)*/
     --fs-sm:0.875rem;
     --fs-base: 1rem;
     --fs-large: 1.25rem;
@@ -47,4 +47,50 @@
 
 html{
     font-family: var(--fonte-inter);
+    font-weight: var(--fw-base);
+    font-size: var(--fs-base);
+    line-height: 1.6rem;
+    color: var(--text-color-primary);
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+
+h1,h2,h3{
+    line-height: 120%;
+    font-weight: var(--fw-bold);
+    color: var(--text-color-primary);
+    letter-spacing: -4%;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+h1{
+    font-size: var(--fs-2xlarge);
+}
+
+h2{
+    font-size: var(--fs-xlarge);
+}
+
+h3{
+    font-size: var(--fs-large);
+}
+
+ul[role="list"]{
+    list-style: none;
+}
+
+@media( width >= 80rem){
+    :root{
+    /* Tamanhos de fonte PC*/
+    --fs-large: 2rem;
+    --fs-xlarge: 3rem;
+    --fs-2xlarge: 4rem;
+    }
 }
