@@ -45,6 +45,9 @@
     --py-lg:1.5rem;
     --py-xl:3rem;
 
+
+    /* Cor gradiente */
+    --cor-gradient: linear-gradient(to left, var(--brand-color-primary) 0%, var(--brand-color-secundary) 100%);
 }
 
 html{

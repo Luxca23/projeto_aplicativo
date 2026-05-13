@@ -10,37 +10,66 @@
     border: none;
     cursor: pointer;
     border-radius: 8px;
+    width: fit-content;
+}
+
+.btn[aria-label]{
+    position:relative;
+    color: var(--text-color-primary);
+
+    &::before{
+        content: "";
+        position: absolute;
+        background:var(--bg-color);
+        border-radius: inherit;
+        inset: 1.5px;
+    }
+
+    &::after{
+        content: attr(aria-label);
+        background: var(--text-color-primary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color:transparent; 
+        position: relative;
+        
+    }
+
+
+    &:hover{
+        &::after{
+            content: attr(aria-label);
+            background: var(--cor-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+    }
+    
+
 }
 
 .btn-lg{
     font-size: 1.125rem;
     padding: 1rem 2rem;
-    width: 7.5rem;
-    height: 3.5rem;
-    /* display: none; */
-    /* transition: 0.3s ease-in-out; */
 }
 
 .btn-md{
     font-size:var(--fs-base);
     padding: 0.75rem 1.5rem;
-    width: 6rem;
-    height: 3rem;
-    /* display: none; */
-    /* transition: 0.3s ease-in-out; */
 }
 
 .btn-sm{
     font-size: var(--fs-sm);
     padding: 0.5rem 1rem;
-    width: 5rem;
-    height: 2.5rem;
-    /* transition: 0.3s ease-in-out; */
 }
 
 .btn-lg:hover,
 .btn-md:hover,
 .btn-sm:hover{
-    background: linear-gradient(to left, var(--brand-color-primary) 0%, var(--brand-color-secundary) 100%);
+    background: var(--cor-gradient);
     transition: 0.3s ease-in-out;
+}
+
+.btn2{
+
 }
