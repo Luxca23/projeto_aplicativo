@@ -1,13 +1,4 @@
 @import url(global.css);
 @import url(classes.css);
 
-.caixa{
-    width:auto;
-    height:fit-content;
-    border: 1px solid red;
-    display: flex;
-    /* flex-direction: column; */
-    align-items:end;
-    gap: 5px;
-    border-radius: 8px;
-}
+

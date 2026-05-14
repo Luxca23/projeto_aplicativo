@@ -1,0 +1,17 @@
+@import url(global.css);
+@import url(classes.css);
+
+
+header{
+    width: auto;
+}
+
+.logosite{
+    margin-right: auto;
+    cursor: pointer;
+}
+
+ul{
+    gap:var(--px-lg)
+}
+

@@ -32,13 +32,26 @@
     gap: 1rem
 }
 
+.flex{
+    display: flex;
+}
+
+.alignItems{
+    align-items: center;
+}
+
+.gap-24{
+    gap:var(--px-lg)
+}
+
 @media(width >= 80rem){
     .container{
         --max-width:80rem;
     }
 
     .off-desktop{
-        display: initial;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .even-columns{
