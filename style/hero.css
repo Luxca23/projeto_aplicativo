@@ -1,0 +1,54 @@
+@import url(global.css);
+@import url(classes.css);
+
+#hero{
+    background-image: url(../assets/icons/Illustration.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 15rem;
+    overflow: hidden;
+
+    & .container{
+        & p{
+            color:var(--text-color-secundary);
+            font-weight: var(--fw-md);
+            font-size: var(--fs-large);
+            line-height: 140%;
+            margin-top: calc(1rem / 2);
+        }
+
+        & img[src*= "Music"]{
+            padding-bottom: 1rem;
+            width:12.875rem;
+        }
+
+        & .caixabotoes{
+            margin-top: 2rem;
+        }
+    }
+}
+
+
+@media(width >= 80rem){
+    #hero{
+
+
+    & .container{
+
+        & p{
+            margin-top: 1rem;
+        }
+
+        & img[src*= "Music"]{
+            padding-bottom: 1.5rem;
+            width:25.75rem;
+        }
+
+        & .caixabotoes{
+            margin-top: 3rem;
+        }
+    }
+}
+
+}

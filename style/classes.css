@@ -3,7 +3,7 @@
 .container{
     --max-width: 375px;
     width: min(var(--max-width), 100% - var(--px-lg) * 2);
-    border:1px solid brown;
+    /* border:1px solid brown; */
     margin-inline: auto;
 }
 
@@ -40,8 +40,24 @@
     align-items: center;
 }
 
+.jcenter{
+    justify-content: center;
+}
+
+.columns{
+    flex-direction: column;
+}
+
 .gap-24{
     gap:var(--px-lg)
+}
+
+.gap1{
+    gap:1rem;
+}
+
+.tcenter{
+    text-align: center;
 }
 
 @media(width >= 80rem){
