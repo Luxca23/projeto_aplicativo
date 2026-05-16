@@ -32,6 +32,16 @@
     gap: 1rem
 }
 
+/* .gridcomum{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+} */
+
+.gridcomum{
+        grid-template-columns: 1fr;
+    }
+
 .flex{
     display: flex;
 }
@@ -60,18 +70,33 @@
     text-align: center;
 }
 
+.on-smartphone{
+    display: block;
+}
+
 @media(width >= 80rem){
     .container{
         --max-width:80rem;
     }
 
     .off-desktop{
-        display: flex;
-        justify-content: space-evenly;
+        display: initial;
     }
 
     .even-columns{
         grid-auto-flow: column;
         gap:2rem;
     }
+
+    .on-smartphone{
+        display: none;
+    }
+
+    .gridcomum{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+}
+
+    
 }

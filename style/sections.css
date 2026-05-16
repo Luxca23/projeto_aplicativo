@@ -1,0 +1,16 @@
+@import url(classes.css);
+@import url(global.css);
+
+.section-smart{
+    /* border: 1px solid green; */
+
+    background-image: url(../assets/icons/Illustration.svg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & img{
+        max-width: 100%;
+        display: block;
+    }
+}
