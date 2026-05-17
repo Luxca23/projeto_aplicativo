@@ -17,12 +17,13 @@
     position:relative;
     color: var(--text-color-primary);
 
+
     &::before{
         content: "";
         position: absolute;
         background:var(--bg-color);
         border-radius: inherit;
-        inset: 1.5px;
+        inset: 2px;
     }
 
     &::after{
@@ -32,7 +33,6 @@
         background-clip: text;
         color:transparent; 
         position: relative;
-        
     }
 
 
@@ -67,7 +67,6 @@
 .btn-md:hover,
 .btn-sm:hover{
     background: var(--cor-gradient);
-    transition: 0.3s ease-in-out;
 }
 
 @media(width >= 80rem){
@@ -85,4 +84,6 @@
     font-size: var(--fs-sm);
     padding: 0.5rem 1rem;
 } */
+
+
 }

@@ -73,12 +73,14 @@ h1,h2,h3{
 a{
     text-decoration: none;
     color:var(--text-color-secundary);
+    /* transition: 0.3s ease-in-out; */
 
     &:hover{
         background: var(--cor-gradient);
         -webkit-background-clip: text;
         background-clip: text;
         color:transparent;
+        transition: 0.3s ease-in-out;
     }
 }
 
