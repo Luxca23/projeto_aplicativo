@@ -3,7 +3,7 @@
 
 
 .cards{
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .card{
@@ -106,6 +106,10 @@
     .card[data-card4]{
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: auto;
+    }
+
+    .cards{
+        gap: 2rem;
     }
 
 }
