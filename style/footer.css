@@ -1,0 +1,136 @@
+@import url(global.css);
+@import url(classes.css);
+
+footer{
+    /* padding: 3rem 3rem 1.5rem 3rem; */
+    /* border: 1px solid rgb(255, 196, 0); */
+
+    & .container{
+        padding: 3rem 3rem 1.5rem 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        & .foot{
+            /* border: 1px solid yellowgreen; */
+            display: grid;
+            gap: 1rem;
+
+            & .caixalistas{
+                    /* border: 1px solid tomato; */
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4rem;
+
+                    & ul{
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        & li:nth-child(1){
+                            color: var(--brand-color-primary);
+                            font-weight: 600;
+                        }
+
+                        & li:not(:first-child){
+                            color: var(--text-color-secundary);
+                            font-size: 1rem;
+                            font-weight: 300;
+                        }
+
+                        & li{
+                            cursor: pointer;
+                        }
+                    }
+                }
+        }
+
+        & .copy{
+            /* border: 1px solid green; */
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 24px;
+
+            & .direitos p{
+                color: var(--text-color-secundary);
+                font-size: 0.8rem;
+                cursor: pointer;
+                text-align: center;
+            }
+
+            & .redes{
+                display: flex;
+                gap: 1.5rem;
+                justify-content: center;
+            }
+
+            & .redes img{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media(width >= 80rem){
+    footer{
+
+        & .container{
+            padding: 5rem 0rem 2rem 0rem;
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+
+            & .foot{
+                /* border: 1px solid yellowgreen; */
+                display: flex;
+                justify-content: space-between;
+
+                & .caixalistas{
+                    /* border: 1px solid tomato; */
+                    display: flex;
+                    flex-direction: row;
+                    gap: 4rem;
+
+                    & ul{
+                        list-style: none;
+
+                        & li:nth-child(1){
+                            color: var(--brand-color-primary)
+                        }
+
+                        & li:not(:first){
+                            color: var(--text-color-secundary);
+                        }
+                    }
+                }
+            }
+
+            & .copy{
+
+                /* border: 1px solid green; */
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                & .direitos p{
+                    color: var(--text-color-secundary);
+                    font-size: 0.8rem;
+                    cursor: pointer;
+                }
+
+                & .redes{
+                    display: flex;
+                    gap: 1.5rem;
+                }
+
+                & .redes img{
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+}
