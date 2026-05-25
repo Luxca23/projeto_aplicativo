@@ -1,0 +1,84 @@
+@import url(global.css);
+@import url(classes.css);
+
+#download{
+    
+    & .container[data-especial]{
+        position: relative;
+
+        & .container{
+            width: 100%;
+            padding: 3rem 1.5rem 19rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--surface-color);
+            border-radius: 1.5rem;
+
+            & .homem{
+                width: 14.875rem;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+            & .tudo{
+                    /* border: 1px solid green; */
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+
+                    & .caixabotoes2{
+                        /* border: 1px solid blue; */
+                        & img{
+                            width: min-content;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+            & .tudo .caixat2{
+                /* border: 1px solid rgb(255, 231, 231); */
+                width: 100%;
+                display: grid;
+                gap: 0.5rem;
+
+                & strong{
+                    color: var(--brand-color-primary);
+                    font-size: 0.875rem;
+                }
+
+                & h2{
+                    font-size: var(--fs-xlarge);
+                }
+
+                & p{
+                    color: var(--text-color-secundary);
+                }
+            }
+        }
+
+    }
+
+}
+
+@media(width >= 80rem){
+        #download .container[data-especial] .container{
+            padding: 8.75rem 5rem;
+            display: flex;
+            flex-direction: row;
+
+            & .homem{
+                width: 29.12rem;
+            }
+
+            & .tudo .caixat2{
+                width: 40rem;
+            }
+
+            & .tudo{
+                flex-direction: column;
+                gap: 2.5rem;
+            }
+
+        }
+    };

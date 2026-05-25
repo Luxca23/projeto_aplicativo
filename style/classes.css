@@ -7,6 +7,14 @@
     margin-inline: auto;
 }
 
+.container[data-especial]{
+    --max-width: 375px;
+    width: min(var(--max-width), 100% - var(--px-lg) * 2);
+    /* border:1px solid rgb(49, 255, 169); */
+    margin-inline: auto;
+    padding: 0;
+}
+
 .py-base{
     padding-block: var(--py-base);
 }
@@ -90,6 +98,10 @@
 
 @media(width >= 80rem){
     .container{
+        --max-width:80rem;
+    }
+
+    .container[data-especial]{
         --max-width:80rem;
     }
 

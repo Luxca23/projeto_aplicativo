@@ -4,10 +4,9 @@
 #pricing .container .caixacartoes{
     /* border: 1px solid green; */
     display: flex;
-    gap: 2rem;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
 
     & .carta{
         /* border:1px solid yellow; */
@@ -141,6 +140,8 @@
 @media(width >= 80rem){
     #pricing .container .caixacartoes{
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .caixatitulo[data-titulo]{
